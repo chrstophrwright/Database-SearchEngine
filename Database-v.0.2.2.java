@@ -49,7 +49,7 @@ public class Database {
 	}
 
 	public numLookUpField(int num){
-		return "(" + database.get((fieldIndex.get(num).value).toString() + "," + database.get((fieldIndex.get(num).entryName).toString() +"+")";
+		return "(" + database.get((fieldIndex.get(num).value).toString() + "," + database.get((fieldIndex.get(num).entryName).toString() +")";
 	}
 
 	public numLookUpField(int num, String entryName){

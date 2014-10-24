@@ -1,0 +1,56 @@
+/* Chris Wright on 10/20/2014
+ * 
+ * Defines the structure of a single entry into a database
+ * for Professor Herman's Object Oriented class
+ */
+
+package DatabaseClass;
+
+//import java.util;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+
+public class Database {
+	public  ArrayList<String, <T>> database = new ArrayList<String, <T>>();
+	private static HashMap<String, int> valueIndex = new HashMap<String, int>();
+	private static HashMap<String, int> fieldIndex = new HashMap<String, int>();
+	private static int location = 0 ;
+
+
+	public void newContent(String name, <T> value){
+		database.add([name, value]);
+		valueIndex.put(value, location);
+		fieldIndex.put(field, location);
+		location ++;
+	}
+
+	public String getField(String value){
+		return database[valueIndex.get(value)][0];
+	}
+
+	public String getFieldIterable(int loc){
+		return database[loc][0]];
+	}
+
+
+	public <T> getValue(String fieldName){ //String entry){
+		return database[fieldIndex.get(fieldName)][1];
+	}
+
+	public <T> getValueIterable(int loc){
+		return database[loc][1];
+	}
+
+
+	public String[][] getAllContent(){
+		Collections collect = new Collections();
+		collect = database.sort();
+		return collect;
+	}
+
+}
